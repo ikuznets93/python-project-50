@@ -1,8 +1,10 @@
 import json
 
+
 def json_parsing(file_path):
     data = json.load(open(file_path, 'r', encoding='utf-8'))
     return data
+
 
 def generate_diff(file_path1, file_path2):
     data1 = json_parsing(file_path1)
